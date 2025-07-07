@@ -1,0 +1,19 @@
+//Magic number
+import java.util.*;
+class Main{
+    public static void main(String args[]){
+        Scanner in = new Scanner(System.in);
+        int n=in.nextInt();
+    int sum=1+(n-1)%9;
+    if(sum==1){
+        System.out.println(+n+ " is magic number.");
+    }
+    else {
+        System.out.println(+n+" is not magic number.");
+    }
+    }
+}
+
+output 
+199
+199 is magic number.
