@@ -1,0 +1,22 @@
+//to find the factorial
+import java.util.*;
+class Main{
+    public static void main(String a[]){
+        Scanner in = new Scanner(System.in);
+        int n=in.nextInt();
+        int fact=1;
+        if(n==0||n==1){
+            System.out.println("factorial is 1.");
+        }
+        else {
+            for(int i=2;i<=n;i++){
+                fact*=i;
+            }}
+            System.out.println("The factorial of "+n+" is: "+fact);
+        
+    }
+}
+
+output :
+5
+The factorial of 5 is: 120
