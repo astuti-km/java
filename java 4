@@ -1,0 +1,17 @@
+import java.util.*;
+class Main{
+    public static void main(String args[]){
+        Scanner in = new Scanner(System.in);
+        int n=in.nextInt();
+        int sum =0;
+        while(n>0){
+            int p=n%10;
+            sum+=p;
+            n/=10;
+        }
+        System.out.println("the sum of all digits: "+sum);
+    }
+}
+5678
+the sum of all digits: 26
+
