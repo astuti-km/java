@@ -1,0 +1,364 @@
+1.//USING LOOP 
+import java.util.*;
+class Main{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int n=sc.nextInt();
+        for(int i=0;i<n;i++){
+            for(int j=0;j<=i;j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+}
+output
+5
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+
+2.//USING LOOP
+import java.util.*;
+class Main{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int n=sc.nextInt();
+        for(int i=n;i>=1;i--){
+            for(int j=1;j<=i;j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+  output
+5
+* * * * * 
+* * * * 
+* * * 
+* * 
+* 
+
+3.//USING LOOP
+import java.util.*;
+class Main{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int n=sc.nextInt();
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=n;j++){
+                if(i==1||j==1||j==n||i==n){
+                    System.out.print("*");
+                }
+                else {
+                    System.out.print(" ");
+                }}
+                System.out.println();
+        }
+    }
+}
+output
+  5
+*****
+*   *
+*   *
+*   *
+*****
+
+  4.//USING LOOP
+import java.util.*;
+class Main{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int n=sc.nextInt();
+        for(int i=1;i<=n;i++){
+            for(int j=i;j<=n;j++){
+                 System.out.print(" ");}
+                 for(int j=1;j<=2*i-1;j++){
+                     System.out.print("*");
+                 }
+                 System.out.println();
+            }
+            for(int i=n-1;i>=1;i--){
+            for(int j=i;j<=n;j++){
+                 System.out.print(" ");}
+                 for(int j=1;j<=2*i-1;j++){
+                     System.out.print("*");
+                 }
+                 System.out.println();
+            }}}
+output
+  5
+     *
+    ***
+   *****
+  *******
+ *********
+  *******
+   *****
+    ***
+     *
+
+  5.//USING LOOP
+  import java.util.*;
+class Main{
+    public static void main(String args[]){
+        Scanner in = new Scanner(System.in);
+        int n=in.nextInt();
+        for(int i=n;i>=1;i--){
+            for(int j=i;j<=n;j++){
+                System.out.print(" ");
+            }
+            for(int j=1;j<=2*i-1;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
+output
+  5
+ *********
+  *******
+   *****
+    ***
+     *
+
+  6.//USING LOOP
+  import java.util.*;
+class Main{
+    public static void main(String args[]){
+        Scanner in = new Scanner(System.in);
+        int n=in.nextInt();
+        for(int i=1;i<=n;i++){
+            for(int j=i;j<=n;j++){
+                System.out.print(" ");
+            }
+            for(int j=1;j<=2*i-1;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
+output
+  5
+     *
+    ***
+   *****
+  *******
+ *********
+
+ 7. //USING LOOP
+  import java.util.*;
+class Main{
+    public static void main(String args[]){
+        Scanner in = new Scanner(System.in);
+        int n=in.nextInt();
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=i;j++){
+               System.out.print("* ");
+            }
+            System.out.println();
+        }
+        for(int i=n-1;i>=1;i--){
+            for(int j=1;j<=i;j++){
+               System.out.print("* ");
+            }
+            System.out.println();
+        }}}
+output
+  5
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+* * * * 
+* * * 
+* * 
+* 
+
+8.  //USING LOOP
+  import java.util.*;
+class Main{
+    public static void main(String args[]){
+        Scanner in = new Scanner(System.in);
+        int n=in.nextInt();
+        for(int i=1;i<=n;i++){
+            for(int j=i;j<n;j++){
+              System.out.print(" ");  
+            }
+            for(int j=1;j<=(2*i-1);j++){
+                if(j==1||j==(2*i-1)||i==n){
+                    System.out.print("*");
+                }
+                else {
+                    System.out.print(" ");
+                }
+        }
+        System.out.println();
+    }}
+}
+output
+  5
+    *
+   * *
+  *   *
+ *     *
+*********
+
+ 9. //USING LOOP
+  import java.util.*;
+class Main{
+    public static void main(String args[]){
+        Scanner in = new Scanner(System.in);
+        int n=in.nextInt();
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=n;j++){
+                if(j==i||j==n-i+1){
+                    System.out.print("*");
+                }
+                System.out.print(" ");
+            }
+            System.out.println();
+        }}}
+output
+  5
+*    * 
+ *  *  
+  *   
+ *  *  
+*    * 
+
+10.//USING LOOP
+  import java.util.*;
+class Main{
+    public static void main(String args[]){
+        Scanner in = new Scanner(System.in);
+        int n=in.nextInt();
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=n;j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }}}
+output
+  5
+* * * * * 
+* * * * * 
+* * * * * 
+* * * * * 
+* * * * * 
+
+  11.//USING LOOP
+  import java.util.*;
+class Main{
+    public static void main(String args[]){
+        Scanner in = new Scanner(System.in);
+        int n=in.nextInt();
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=i;j++){
+                System.out.print(i);
+            }
+            System.out.println();
+        }}}
+ number: 5
+1
+22
+333
+4444
+55555
+
+ 12. //USING LOOP
+  import java.util.*;
+class Main{
+    public static void main(String args[]){
+        Scanner in = new Scanner(System.in);
+        int n=in.nextInt();
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=i;j++){
+                System.out.print(j);
+            }
+            System.out.println();
+        }}}
+output
+  number: 5
+1
+12
+123
+1234
+12345
+
+ 13. //USING LOOP
+  import java.util.*;
+class Main{
+    public static void main(String args[]){
+        Scanner in = new Scanner(System.in);
+        int n=in.nextInt();
+        for(int i=n;i>=1;i--){
+            for(int j=1;j<=i;j++){
+                System.out.print(j);
+            }
+            System.out.println();
+        }}}
+output
+  number: 5
+12345
+1234
+123
+12
+1
+
+ 14. //USING LOOP
+  import java.util.*;
+class Main{
+    public static void main(String args[]){
+        Scanner in = new Scanner(System.in);
+        int n=in.nextInt();
+        for(int i=n;i>=1;i--){
+            for(int j=1;j<=i;j++){
+                System.out.print(i);
+            }
+            System.out.println();
+        }}}
+output 
+Number: 5
+55555
+4444
+333
+22
+1
+
+  15.//USING LOOP
+  import java.util.*;
+class Main{
+    public static void main(String args[]){
+        Scanner in = new Scanner(System.in);
+        int n=in.nextInt();
+        for(int i=0;i<=n;i++){
+            for(int j=1;j<=i;j++){
+                int sum=i+j;
+                if(sum%2==0){
+                    System.out.print("1 ");
+                }
+                else {
+                    System.out.print("0 ");
+                }
+            }
+            System.out.println();
+        }}}
+
+output 
+number:  5
+
+1 
+0 1 
+1 0 1 
+0 1 0 1 
+1 0 1 0 1 
+
+  
+  
