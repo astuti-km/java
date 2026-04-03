@@ -1,0 +1,86 @@
+import java.util.Scanner;
+
+public class HighestTwo {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter first number: ");
+        int a = sc.nextInt();
+
+        System.out.print("Enter second number: ");
+        int b = sc.nextInt();
+
+        if (a > b)
+            System.out.println("Highest = " + a);
+        else
+            System.out.println("Highest = " + b);
+    }
+}
+
+import java.util.Scanner;
+
+public class HighestThree {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter three numbers: ");
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+
+        int max = a;
+
+        if (b > max)
+            max = b;
+        if (c > max)
+            max = c;
+
+        System.out.println("Highest = " + max);
+    }
+}
+
+
+import java.util.Scanner;
+
+public class HighestArray {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter size: ");
+        int n = sc.nextInt();
+
+        int arr[] = new int[n];
+
+        System.out.println("Enter elements:");
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+
+        int max = arr[0];
+
+        for (int i = 1; i < n; i++) {
+            if (arr[i] > max)
+                max = arr[i];
+        }
+
+        System.out.println("Highest = " + max);
+    }
+}
+
+
+
+import java.util.Scanner;
+
+public class HighestMath {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter two numbers: ");
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+
+        int max = Math.max(a, b);
+
+        System.out.println("Highest = " + max);
+    }
+}
